@@ -1,4 +1,5 @@
 fastapi==0.79.0
 gunicorn==20.1.0
 uvicorn==0.18.2
-scikit-learn-intelex==2021.20220215.102710
+daal4py
+scikit-learn-intelex
