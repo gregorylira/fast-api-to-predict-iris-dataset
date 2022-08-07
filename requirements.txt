@@ -1,6 +1,4 @@
-daal4py
 fastapi==0.79.0
-flatbuffers==1.12
 gunicorn==20.1.0
 httptools==0.4.0
 keras==2.9.0
@@ -8,6 +6,5 @@ libclang==14.0.6
 pathspec==0.7.0
 python-dotenv==0.20.0
 PyYAML==6.0
-scikit-learn-intelex
 tensorflow==2.9.1
 uvicorn==0.18.2
