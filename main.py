@@ -1,4 +1,3 @@
-import joblib
 import tensorflow as tf
 from fastapi import FastAPI
 from typing import Optional
@@ -6,15 +5,9 @@ from pydantic import BaseModel
 import numpy as np
 
 
-json_file = open('model.json', 'r')
-loaded_model_json = json_file.read()
-json_file.close()
+# uvicorn main:app --reload
 
-loaded_model = tf.keras.models.model_from_json(loaded_model_json)
-loaded_model.load_weights("model.h5")
-
-loaded_model.compile(loss='categorical_crossentropy',
-                     metrics=['accuracy'], optimizer='rmsprop')
+loaded_model_json = tf.keras.models.load_model('model.h5')
 
 
 app = FastAPI()

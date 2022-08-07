@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.metrics import classification_report
 from sklearn.preprocessing import OneHotEncoder
-import joblib
+import pickle
 
 
 iris = datasets.load_iris()
@@ -45,12 +45,7 @@ plt.legend(['Treinamento', 'Validacao'])
 plt.show()
 
 
-model_json = model.to_json()
-with open("model.json", "w") as json_file:
-    json_file.write(model_json)
-
-model.save_weights("model.h5")
-
+model.save('model.h5')
 
 # pred = np.round(model.predict(X_test))
 # pred_train = np.round(model.predict(X_train))
