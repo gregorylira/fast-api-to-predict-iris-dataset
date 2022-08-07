@@ -55,7 +55,7 @@ pytz==2021.3
 PyYAML==6.0
 queuelib==1.5.0
 requests-oauthlib==1.3.1
-scikit-learn-intelex==2021.20220215.102710
+scikit-learn-intelex==2021.2.1
 sip==4.19.13
 starlette==0.19.1
 statsmodels==0.13.2
