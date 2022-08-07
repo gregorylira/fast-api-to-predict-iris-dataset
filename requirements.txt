@@ -1,6 +1,4 @@
 fastapi==0.79.0
 gunicorn==20.1.0
 uvicorn==0.18.2
-numpy
-xgboost
-scikit-learn==0.13.1
+scikit-learn-intelex==2021.20220215.102710
